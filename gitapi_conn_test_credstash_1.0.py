@@ -17,9 +17,9 @@ auth = Auth.Token(GIT_KEY)
 g = Github(auth=auth)
 
 # Get the repository you want to access
-repo = g.get_repo("PyGithub/PyGithub")
+repo = g.get_repo("fugue/credstash")
 # Then get the contents of a folder if required, otherwise leave as empty string to get the root folder contents
-contents = repo.get_contents("scripts")
+contents = repo.get_contents("")
 #loop through with a simple for
 for content_file in contents:
     print(content_file)
