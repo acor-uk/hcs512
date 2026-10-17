@@ -42,7 +42,7 @@ def get_snippet(file_key, issue_from, issue_to):
         params=source_params
     )
 
-    status = output_issue_response.status_code
+    #status = output_issue_response.status_code
     snippet = output_issue_response.json()
 
     #print(status)
